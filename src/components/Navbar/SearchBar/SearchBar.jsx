@@ -18,6 +18,11 @@ export default function SearchBar(props) {
         placeholder="Busca un personaje..."
         onChange={handleChange}
         value={id}
+        onKeyPress={(event) => {
+          if (event.key === "Enter") {
+            props.onSearch(id);
+          }
+        }}
       />
       <button
         className={style.button}

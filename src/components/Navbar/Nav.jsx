@@ -7,9 +7,9 @@ export default function Nav(props) {
   // props --> {onSearch: function}
   return (
     <div className={style.container}>
-      <Link to="/about">ABOUT</Link>
-      <Link to="/create">ADD CHARACTER!</Link>
-      <Link to="/home">HOME</Link>
+      <Link className={style.link} to="/about">ABOUT</Link>
+      <Link className={style.link} to="/create">ADD CHARACTER!</Link>
+      <Link className={style.link} to="/home">HOME</Link>
       <SearchBar onSearch={props.onSearch} />
     </div>
   );

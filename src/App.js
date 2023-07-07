@@ -66,7 +66,4 @@ export default App;
 //   }
 // })
 // .catch((err) => window.alert("¡No hay personajes con este ID!"));
-{
-  /*
-   */
-}
+

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import style from "./Form.module.css"
 
 export default function Form() {
   const [user, setUser] = useState({ username: "", email: "", password: "" });
@@ -6,7 +7,6 @@ export default function Form() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log("submit, tuki");
   }
 
   function handleChange(event) {
@@ -30,7 +30,7 @@ export default function Form() {
   }
 
   return (
-    <div>
+    <div className={style.info}>
       <form onSubmit={handleSubmit}>
         <label>Username</label>
         <input
@@ -66,6 +66,8 @@ export default function Form() {
         />
         <input type="submit"></input>
       </form>
+      <h1>This feature is not available at this time :'(</h1>
     </div>
+    
   );
 }

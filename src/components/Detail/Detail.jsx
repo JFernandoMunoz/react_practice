@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-
+import style from "./Detail.module.css"
 
 
 export default function Detail() {
@@ -29,10 +29,10 @@ export default function Detail() {
   }, []);
 
   return (
-    <div>
+    <div className={style.div}>
+      <img src={pjDetail.image} alt={pjDetail.name} />
       <h3>{pjDetail.name && pjDetail.name}</h3>
       <h5>{pjDetail.status ? pjDetail.status : ":( no hay status"}</h5>
-      <img src={pjDetail.image} alt={pjDetail.name} />
       <section>
         <span>🐞{pjDetail.species}</span>
         <span> ♀ {pjDetail.gender}</span>

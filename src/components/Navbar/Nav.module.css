@@ -1,12 +1,27 @@
 .container{
-    background-color: rgb(135, 91, 135);
+    background-color: rgb(188, 136, 188);
     display: flex;
     gap: 20px;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
-.active{
-    color: yellow;
+
+
+.link{
+    text-decoration: none;
+    height: 50%;
+    padding: 4px 20px;
+    background-color: #9000ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
+.link:hover {
+    background-color: #ffffff;
+    color: #9000ff;
+    font-weight: bold;
+  }
